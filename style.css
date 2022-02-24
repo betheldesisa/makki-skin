@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Spartan&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -44,26 +44,193 @@ nav ul li {
   margin: 0px 20px;
 }
 
+nav ul li:hover:before {
+  color: #4d4545;
+}
+
 nav ul li a {
   text-decoration: none;
   color: #4d4545;
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
   position: relative;
+  transition: 0.3s ease;
   /* margin-top: 100px; */
 }
 
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  background: #4d4545;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+  color: #4d4545;
+}
+
+nav ul li a:hover:before {
+  width: 100%;
+}
+
 .main__content {
-  margin: 50px 100px 50px 100px;
+  /* margin: 50px 100px 50px 100px; */
+}
+
+.home__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 90vh;
+
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding-left: 100px;
+  /* padding-right: 200px; */
 }
 
 .home__container .home-text {
-  padding: 200px 100px 250px 100px;
+  /* padding: 200px 100px 250px 100px; */
   gap: 8rem;
+  font-family: "Manrope", sans-serif;
+  color: #4d4545;
+  margin-bottom: 100px;
+}
+
+.home-text h1 {
+  font-size: 4rem;
 }
 
 .home__container .home-img img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: top;
   width: 500px;
-  border-radius: 25px;
+  margin-bottom: 200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+@media (max-width: 1000px) {
+  .home__container {
+    display: block;
+    font-size: 80%;
+  }
+
+  .home-text h1 p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding: 1rem;
+    background: rgba(white, 0.8);
+  }
+
+  .home-img img {
+    display: flex;
+  }
+}
+
+/*SHOP PRODUCTS*/
+
+.shop-title h3 {
+  font-family: "Manrope", sans-serif;
+}
+
+.shop__products {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.carousel {
+  margin: 30px auto 60px;
+  padding: 0 80px;
+}
+.carousel .carousel-item {
+  text-align: center;
+  overflow: hidden;
+}
+.carousel .carousel-item h4 {
+  font-family: "Varela Round", sans-serif;
+}
+.carousel .carousel-item img {
+  max-width: 100%;
+  display: inline-block;
+}
+.carousel .carousel-item .btn {
+  border-radius: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  background: #a177ff;
+  padding: 6px 15px;
+  margin-top: 5px;
+}
+.carousel .carousel-item .btn:hover {
+  background: #8c5bff;
+}
+.carousel .carousel-item .btn i {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+  margin: 5px;
+  text-align: left;
+  background: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.carousel .thumb-content {
+  padding: 15px;
+  font-size: 13px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  height: 44px;
+  width: 44px;
+  background: none;
+  margin: auto 0;
+  border-radius: 50%;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+}
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 36px;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  margin: -19px 0 0 0;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: none;
+  font-weight: bold;
+}
+.carousel-control-prev i {
+  margin-left: -3px;
+}
+.carousel-control-next i {
+  margin-right: -3px;
+}
+.carousel-indicators {
+  bottom: -50px;
+}
+.carousel-indicators li,
+.carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 4px;
+  border: none;
+}
+.carousel-indicators li {
+  background: #ababab;
+}
+.carousel-indicators li.active {
+  background: #555;
+}
+/*END SHOP PRODUCTS*/
