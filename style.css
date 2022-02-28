@@ -11,71 +11,43 @@
   background-image: url(images/makki-bkg.png);
   background-position: center;
   background-size: cover;
-  padding-left: 30px;
-  padding-right: 5%;
+  padding-left: 8%;
+  padding-right: 8%;
   box-sizing: border-box;
   position: relative;
 }
 
-.nav__bar .logo {
-  width: 235px;
-}
-
-.nav__bar .cart {
-  width: 40px;
-}
-
-.nav__bar {
-  width: 100%;
-  height: 15vh;
-  margin: auto;
+.navbar {
+  height: 12%;
   display: flex;
   align-items: center;
 }
 
 nav {
   flex: 1;
-  padding-left: 60px;
+  text-align: right;
 }
 
 nav ul li {
-  display: inline-block;
   list-style: none;
-  margin: 0px 20px;
+  display: inline-block;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #4d4545;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 nav ul li:hover:before {
   color: #4d4545;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #4d4545;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.2rem;
-  position: relative;
-  transition: 0.3s ease;
-  /* margin-top: 100px; */
-}
-
-nav ul li a:before {
-  content: "";
-  position: absolute;
-  background: #4d4545;
-  width: 0;
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  transition: 0.3s ease;
-  color: #4d4545;
-}
-
-nav ul li a:hover:before {
-  width: 100%;
-}
-
-.main__content {
-  /* margin: 50px 100px 50px 100px; */
+.menu {
+  margin-left: 40px;
 }
 
 .home__container {
@@ -95,27 +67,32 @@ nav ul li a:hover:before {
 
 .home__container .home-text {
   /* padding: 200px 100px 250px 100px; */
-  gap: 8rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  padding-left: 3rem;
+  padding-right: 5rem;
   font-family: "Manrope", sans-serif;
   color: #4d4545;
-  margin-bottom: 100px;
 }
 
 .home-text h1 {
   font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
 .home__container .home-img img {
   max-width: 100%;
   display: inline-block;
   vertical-align: top;
-  width: 500px;
-  margin-bottom: 200px;
+  width: 450px;
+  margin-top: 70px;
+  margin-bottom: 100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 400px) {
   .home__container {
+    margin-top: 5rem;
     display: block;
     font-size: 80%;
   }
@@ -125,11 +102,10 @@ nav ul li a:hover:before {
     margin-bottom: 1rem;
     position: relative;
     padding: 1rem;
-    background: rgba(white, 0.8);
   }
 
-  .home-img img {
-    display: flex;
+  .home__container .home-img img {
+    display: none;
   }
 }
 
@@ -234,3 +210,32 @@ nav ul li a:hover:before {
   background: #555;
 }
 /*END SHOP PRODUCTS*/
+
+.container__banner {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.text-block {
+  position: absolute;
+  left: 30px;
+  top: 100px;
+  background-color: bisque;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+@media (max-width: 400px) {
+  .container__banner {
+    position: relative;
+  }
+
+  .text-block {
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    background-color: fade(bisque, 80%);
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}

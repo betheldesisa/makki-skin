@@ -21,7 +21,7 @@
   </head>
   <body>
     <div class="main__container">
-      <div class="nav__bar">
+      <!-- <div class="nav__bar">
         <img src="/images/logos/mak-logo.png" alt="logo" class="logo" />
         <nav>
           <ul>
@@ -37,6 +37,40 @@
           </ul>
         </nav>
         <img src="/images/logos/shopping-cart.png" alt="cart" class="cart" />
+      </div> -->
+
+      <div class="navbar">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/images/logos/mak-logo.png"
+            alt="logo"
+            style="width: 175px; margin-left: -45px"
+          />
+        </a>
+        <!-- style="width: 170px; margin-left: -30px; margin-right: 100px"-->
+        <nav>
+          <ul>
+            <li>
+              <a href="#" style="color: #4d4545">HOME</a>
+            </li>
+            <li>
+              <a href="#" style="color: #4d4545">PRODUCTS</a>
+            </li>
+            <li>
+              <a href="#" style="color: #4d4545">ABOUT</a>
+            </li>
+            <li>
+              <a href="#" style="color: #4d4545">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="menu" href="#">
+          <img
+            src="/images/logos/shopping-bag.png"
+            alt="cart"
+            style="width: 30px"
+          />
+        </a>
       </div>
 
       <div class="main__content">
@@ -51,7 +85,7 @@
           </div>
 
           <div class="home-img">
-            <img src="/images/model/skin-web1.jpg" alt="model" />
+            <img id="skin-img" src="/images/model/skin-web1.jpg" alt="model" />
           </div>
         </div>
       </div>
@@ -249,6 +283,11 @@
         </div>
       </div>
 
+      <!-- BANNER -->
+      <div class="container__banner">
+        <img src="/images/Clarifying.png" class="img-fluid" alt="banner" />
+      </div>
+
       <!-- FOOTER -->
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
@@ -259,9 +298,6 @@
           href="/"
           class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
         >
-          <!-- <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bootstrap" />
-          </svg> -->
           <img
             src="/images/logos/mak-logo.png"
             alt="logo"
