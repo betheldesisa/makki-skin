@@ -17,107 +17,134 @@
   position: relative;
 }
 
-.navbar {
-  height: 12%;
-  display: flex;
-  align-items: center;
-}
+/***********HOME PAGE NAVBAR*************/
 
-nav {
-  flex: 1;
-  text-align: right;
-}
-
-nav ul li {
+.main__container .home__container .main__container nav ul li {
+  margin: 0;
+  padding: 0;
   list-style: none;
-  display: inline-block;
-  margin-left: 60px;
-  margin-top: 20px;
+  box-sizing: border-box;
 }
 
-nav ul li a {
+.main__container nav ul li a {
   text-decoration: none;
   color: #4d4545;
-  font-size: 15px;
   font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
 }
 
-nav ul li:hover:before {
-  color: #4d4545;
+.nav-links.active,
+.nav-links:hover {
+  background: rgb(255, 211, 190);
+  transition: 0.5s;
 }
 
-.menu {
-  margin-left: 40px;
+.main__container nav .logo img {
+  width: 175px;
+  line-height: 100px;
+  margin-left: -45px;
 }
 
-.home__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-self: center;
-  margin: 0 auto;
-  height: 90vh;
-
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  padding-left: 100px;
-  /* padding-right: 200px; */
+.main__container nav ul {
+  float: right;
+  margin-right: 20px;
 }
 
-.home__container .home-text {
-  /* padding: 200px 100px 250px 100px; */
-  padding-top: 3rem;
-  padding-bottom: 5rem;
-  padding-left: 3rem;
-  padding-right: 5rem;
-  font-family: "Manrope", sans-serif;
-  color: #4d4545;
+.main__container nav .cart img {
+  float: right;
+  line-height: 100px;
+  width: 30px;
+  margin-top: 45px;
 }
 
-.home-text h1 {
-  font-size: 4rem;
-  margin-bottom: 2rem;
+.main__container nav .menu img {
+  float: right;
+  line-height: 100px;
+  width: 30px;
+  margin-top: 45px;
+  margin-right: 20px;
 }
+
+.main__container nav ul li {
+  display: inline-block;
+  line-height: 130px;
+  margin: 0 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-container {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 125px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding: 50px 0 50px 0;
+    border-radius: 10px;
+  }
+
+  .nav-menu.active {
+    background: var(#ffffff);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/***********HOME PAGE NAVBAR*************/
+
+/*HOME PAGE*/
 
 .home__container .home-img img {
-  max-width: 100%;
-  display: inline-block;
-  vertical-align: top;
-  width: 450px;
-  margin-top: 70px;
-  margin-bottom: 100px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 400px;
+  margin-top: -10px;
 }
 
-@media screen and (max-width: 400px) {
-  .home__container {
-    margin-top: 5rem;
-    display: block;
-    font-size: 80%;
-  }
+.main__container .home__container {
+  margin: 15px 50px 0 150px;
+}
 
-  .home-text h1 p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    position: relative;
-    padding: 1rem;
-  }
+.main__container .home__container .home-text {
+  margin-top: 150px;
+  font-family: "Poppins", sans-serif;
+  color: #4d4545;
+}
 
-  .home__container .home-img img {
-    display: none;
-  }
+.main__container .home__container .home-text h1 {
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+}
+
+.main__container .home__container .home-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
 }
 
 /*SHOP PRODUCTS*/
-
-.shop-title h3 {
-  font-family: "Manrope", sans-serif;
+.shop__products {
+  margin-top: 120px;
 }
 
-.shop__products {
-  padding-top: 30px;
-  padding-bottom: 50px;
+.shop-title h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
 }
 
 .carousel {

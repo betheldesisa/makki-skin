@@ -21,80 +21,49 @@
   </head>
   <body>
     <div class="main__container">
-      <!-- <div class="nav__bar">
-        <img src="/images/logos/mak-logo.png" alt="logo" class="logo" />
+      <div class="nav-container">
         <nav>
-          <ul>
+          <a class="logo" id="mobile-menu" href="#">
+            <img src="/images/logos/mak-logo.png" alt="logo" />
+          </a>
+          <a class="cart" href="#">
+            <img src="/images/logos/shopping-bag.png" alt="cart" />
+          </a>
+          <a class="menu" href="#">
+            <img src="/images/logos/menu.png" alt="menu" />
+          </a>
+          <ul class="nav-menu">
             <li>
-              <a href="" style="color: #4d4545">Home</a>
+              <a class="active nav-links" href="#">HOME</a>
             </li>
             <li>
-              <a href="" style="color: #4d4545">About</a>
+              <a class="nav-links" href="#">PRODUCTS</a>
             </li>
             <li>
-              <a href="" style="color: #4d4545">Products</a>
+              <a class="nav-links" href="#">ABOUT</a>
+            </li>
+            <li>
+              <a class="nav-links" href="#">CONTACT</a>
             </li>
           </ul>
         </nav>
-        <img src="/images/logos/shopping-cart.png" alt="cart" class="cart" />
-      </div> -->
-
-      <div class="navbar">
-        <a class="navbar-brand" href="#">
-          <img
-            src="/images/logos/mak-logo.png"
-            alt="logo"
-            style="width: 175px; margin-left: -45px"
-          />
-        </a>
-        <!-- style="width: 170px; margin-left: -30px; margin-right: 100px"-->
-        <nav>
-          <ul>
-            <li>
-              <a href="#" style="color: #4d4545">HOME</a>
-            </li>
-            <li>
-              <a href="#" style="color: #4d4545">PRODUCTS</a>
-            </li>
-            <li>
-              <a href="#" style="color: #4d4545">ABOUT</a>
-            </li>
-            <li>
-              <a href="#" style="color: #4d4545">CONTACT</a>
-            </li>
-          </ul>
-        </nav>
-        <a class="menu" href="#">
-          <img
-            src="/images/logos/shopping-bag.png"
-            alt="cart"
-            style="width: 30px"
-          />
-        </a>
       </div>
 
-      <div class="main__content">
-        <div class="home__container">
-          <div class="home-text">
-            <h1>Get the Glow</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Praesentium id perspiciatis facere repellat, repellendus iusto
-              exercitationem.
-            </p>
-          </div>
+      <div class="home__container row">
+        <div class="home-text child col-md-6">
+          <h1>GET THE GLOW</h1>
+          <p>Natural ingredients for healthy, smooth and even-toned skin.</p>
+        </div>
 
-          <div class="home-img">
-            <img id="skin-img" src="/images/model/skin-web1.jpg" alt="model" />
-          </div>
+        <div class="home-img child col-md-6">
+          <img id="skin-img" src="/images/model/skin-web1.png" alt="model" />
         </div>
       </div>
 
-      <div class="shop-title" style="padding-top: 80px; padding-left: 50px">
-        <h3>SHOP PRODUCTS</h3>
-      </div>
-
       <div class="shop__products">
+        <div class="shop-title">
+          <h3>FEATURED PRODUCTS</h3>
+        </div>
         <div class="container-xl">
           <div class="row">
             <div class="col-md-10 mx-auto">
@@ -104,17 +73,6 @@
                 data-ride="carousel"
                 data-interval="0"
               >
-                <!-- Carousel indicators -->
-                <!-- <ol class="carousel-indicators">
-                  <li
-                    data-target="#myCarousel"
-                    data-slide-to="0"
-                    class="active"
-                  ></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol> -->
-                <!-- Wrapper for carousel items -->
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="row">
@@ -254,15 +212,14 @@
                     </div>
                   </div>
                 </div>
-                <!-- Carousel controls -->
+
                 <a
                   class="carousel-control-prev"
                   href="#myCarousel"
                   data-slide="prev"
                 >
-                  <!-- <i class="fa fa-angle-left"></i> -->
                   <img
-                    src="/images/logos/left.png"
+                    src="/images/logos/left-chevron.png"
                     style="width: 50px; margin-right: 70px"
                   />
                 </a>
@@ -271,9 +228,8 @@
                   href="#myCarousel"
                   data-slide="next"
                 >
-                  <!-- <i class="fa fa-angle-right"></i> -->
                   <img
-                    src="/images/logos/arrow-right.png"
+                    src="/images/logos/chevron.png"
                     style="width: 50px; margin-left: 70px"
                   />
                 </a>
@@ -322,6 +278,9 @@
       </footer>
       <!-- END FOOTER -->
     </div>
+
+    <!-- JAVASCRIPT file -->
+    <script src="app.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
