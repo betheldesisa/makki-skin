@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Spartan&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main__container {
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/about-page/plain-makki-bkg.png);
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/*********** NAVBAR*************/
+
+.main__container .home__container .main__container nav ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.main__container nav ul li a {
+  text-decoration: none;
+  color: #4d4545;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.nav-links.active,
+.nav-links:hover {
+  background: rgb(255, 211, 190);
+  transition: 0.5s;
+}
+
+.main__container nav .logo img {
+  width: 175px;
+  line-height: 100px;
+  margin-left: -45px;
+}
+
+.main__container nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.main__container nav .cart img {
+  float: right;
+  line-height: 100px;
+  width: 30px;
+  margin-top: 45px;
+}
+
+.main__container nav .menu img {
+  float: right;
+  line-height: 100px;
+  width: 30px;
+  margin-top: 45px;
+  margin-right: 20px;
+}
+
+.main__container nav ul li {
+  display: inline-block;
+  line-height: 130px;
+  margin: 0 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-container {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 125px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    padding: 50px 0 50px 0;
+    border-radius: 10px;
+  }
+
+  .nav-menu.active {
+    background: var(#ffffff);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    text-align: center;
+    width: 100%;
+  }
+}
