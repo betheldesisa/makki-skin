@@ -147,6 +147,10 @@
   font-size: 2rem;
 }
 
+.shop-title h4 {
+  font-size: 3rem;
+}
+
 .carousel {
   margin: 30px auto 60px;
   padding: 0 80px;
