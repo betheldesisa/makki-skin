@@ -137,6 +137,89 @@
   font-size: 1.5rem;
 }
 
+/*RESPONSIVE HOMEPAGE*/
+
+@media (max-width: 500px) {
+  .main__container .home__container .home-text h1 {
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5rem;
+  }
+
+  .main__container .home__container .home-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .home__container .home-img img {
+    width: 230px;
+    margin-top: 5px;
+  }
+  .main__container .home__container .home-text {
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    color: #4d4545;
+  }
+  .main__container .home__container {
+    margin: 10px 50px 10px 70px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  .main__container .home__container .home-text h1 {
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5rem;
+  }
+
+  .main__container .home__container .home-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .home__container .home-img img {
+    width: 290px;
+    margin-top: 5px;
+    margin-left: 20px;
+  }
+  .main__container .home__container .home-text {
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    color: #4d4545;
+  }
+  .main__container .home__container {
+    margin: 10px 50px 10px 70px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 999px) {
+  .main__container .home__container .home-text h1 {
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.5rem;
+  }
+
+  .main__container .home__container .home-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+  }
+
+  .home__container .home-img img {
+    width: 400px;
+    margin-top: -50px;
+  }
+  .main__container .home__container .home-text {
+    margin-top: 100px;
+    font-family: "Poppins", sans-serif;
+    color: #4d4545;
+  }
+  .main__container .home__container {
+    margin: 50px 70px 10px 70px;
+  }
+}
+
+/*RESPONSIVE HOMEPAGE*/
+
 /*SHOP PRODUCTS*/
 .shop__products {
   margin-top: 120px;

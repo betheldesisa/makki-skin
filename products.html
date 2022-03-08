@@ -10,6 +10,9 @@
     <!-- Custom CSS -->
     <link href="p-style.css" rel="stylesheet" />
 
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link
@@ -49,7 +52,12 @@
         </nav>
       </div>
 
-      <div class="product-slider">
+      <div
+        class="product-slider"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
         <div class="carousel slide shop-carousel" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -117,5 +125,11 @@
         </div>
       </div>
     </div>
+    <!--SCRIPT-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--SCRIPT-->
   </body>
 </html>

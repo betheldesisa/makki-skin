@@ -10,6 +10,9 @@
     <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet" />
 
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link
@@ -49,7 +52,11 @@
         </nav>
       </div>
 
-      <div class="home__container row">
+      <div
+        class="home__container row"
+        data-aos="fade-left"
+        data-aos-duration="2000"
+      >
         <div class="home-text child col-md-6">
           <h1>GET THE GLOW</h1>
           <p>Natural ingredients for healthy, smooth and even-toned skin.</p>
@@ -60,7 +67,7 @@
         </div>
       </div>
 
-      <div class="shop__products">
+      <div class="shop__products" data-aos="fade-up" data-aos-duration="3000">
         <div class="shop-title">
           <h3>FEATURED PRODUCTS</h3>
         </div>
@@ -279,11 +286,17 @@
       <!-- END FOOTER -->
     </div>
 
+    <!--SCRIPT-->
     <!-- JAVASCRIPT file -->
     <script src="app.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--SCRIPT-->
   </body>
 </html>

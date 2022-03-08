@@ -16,7 +16,6 @@
   box-sizing: border-box;
   position: relative;
 }
-
 /*********** NAVBAR*************/
 
 .main__container .home__container .main__container nav ul li {
@@ -74,7 +73,9 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+/****************** RESPONSIVE CSS ********************/
+
+@media only screen and (max-width: 1000px) {
   .nav-container {
     position: relative;
   }
@@ -105,4 +106,56 @@
     text-align: center;
     width: 100%;
   }
+
+  body {
+    background-image: url(images/about-page/plain-makki-bkg.png);
+  }
+}
+
+@media (max-width: 500px) {
+  .home__container .home-text img {
+    max-width: 300px;
+  }
+
+  .home__container .home-img img {
+    max-width: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+  .home__container .home-text img {
+    max-width: 400px;
+  }
+
+  .home__container .home-img img {
+    max-width: 420px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/****************** RESPONSIVE CSS ********************/
+
+.home__container .home-img img {
+  width: 776px;
+  margin: 0 0 0 20px;
+  /* padding-left: 100px; */
+}
+
+.home__container {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.home__container .home-text img {
+  /* padding-right: 30px; */
+  margin-left: 50px;
+}
+
+.social-media {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-left: 83px;
 }

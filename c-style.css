@@ -106,3 +106,51 @@
     width: 100%;
   }
 }
+
+/*CONTACT FORM*/
+.contact-form {
+  background: #fff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 70%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contact-form .form-control {
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.contact-form form {
+  padding: 5%;
+}
+
+.contact-form .contact-title h3 {
+  /* margin-top: 25%; */
+  padding-top: 70px;
+  margin-right: 5%;
+  text-align: center;
+  color: #4d4545;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+}
+
+.contact-form .contact-title .contact-info h4 {
+  margin-right: 5%;
+  text-align: center;
+  color: #4d4545;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.contact-form .btnContact {
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  padding: 1.5%;
+  margin-top: 20px;
+  background: #4d4545;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
